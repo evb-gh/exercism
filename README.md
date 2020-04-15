@@ -2,5 +2,5 @@
 
 magic and sorcery
 
-One branch for every track
+## Java track branch
 
