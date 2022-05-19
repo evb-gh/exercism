@@ -4,6 +4,7 @@ magic and sorcery
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## C track branch
 =======
 ## Java track branch
@@ -11,4 +12,7 @@ magic and sorcery
 =======
 ## emacs-lisp track branch
 >>>>>>> emacs-lisp
+=======
+## JavaScript Track
+>>>>>>> javascript
 
