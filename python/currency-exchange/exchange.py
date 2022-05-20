@@ -53,7 +53,7 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
     """
     rate = exchange_rate + (exchange_rate / 100 * spread)
 
-    return int(budget / rate * denomination)
+    return int(budget / rate / denomination)
 
 
 def non_exchangeable_value(budget, exchange_rate, spread, denomination):
