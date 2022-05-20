@@ -40,18 +40,24 @@ class CurrencyExchangeTest(unittest.TestCase):
         input_data = [(10000, 128), (50, 360), (200, 200)]
         output_data = [1280000, 18000, 40000]
 
-        for variant, (input_data, output_data) in enumerate(zip(input_data, output_data), start=1):
-            with self.subTest(f"variation #{variant}", input_data=input_data, output_data=output_data):
-                self.assertEqual(get_value_of_bills(input_data[0], input_data[1]), output_data)
+        for variant, (input_data, output_data) in enumerate(zip(
+                input_data, output_data), start=1):
+            with self.subTest(f"variation #{variant}",
+                              input_data=input_data, output_data=output_data):
+                self.assertEqual(get_value_of_bills(
+                    input_data[0], input_data[1]), output_data)
 
     @pytest.mark.task(taskno=4)
     def test_get_number_of_bills(self):
         input_data = [(163270, 50000), (54361, 1000)]
         output_data = [3, 54]
 
-        for variant, (input_data, output_data) in enumerate(zip(input_data, output_data), start=1):
-            with self.subTest(f"variation #{variant}", input_data=input_data, output_data=output_data):
-                self.assertEqual(get_number_of_bills(input_data[0], input_data[1]), output_data)
+        for variant, (input_data, output_data) in enumerate(zip(
+                input_data, output_data), start=1):
+            with self.subTest(f"variation #{variant}",
+                              input_data=input_data, output_data=output_data):
+                self.assertEqual(get_number_of_bills(
+                    input_data[0], input_data[1]), output_data)
 
     @pytest.mark.task(taskno=5)
     def test_exchangeable_value(self):
