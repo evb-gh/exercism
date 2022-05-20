@@ -5,6 +5,7 @@ from exchange import (
     get_change,
     get_value_of_bills,
     get_number_of_bills,
+    bank_rate,
     exchangeable_value,
     non_exchangeable_value)
 
