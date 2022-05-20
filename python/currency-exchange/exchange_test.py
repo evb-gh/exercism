@@ -70,9 +70,12 @@ class CurrencyExchangeTest(unittest.TestCase):
 
         output_data = [8568, 1400, 0, 4017094016600, 363300]
 
-        for variant, (inputs, output_data) in enumerate(zip(inputs, output_data), start=1):
-            with self.subTest(f"variation #{variant}", inputs=inputs, output_data=output_data):
-                self.assertEqual(exchangeable_value(inputs[0], inputs[1], inputs[2], inputs[3]), output_data)
+        for variant, (inputs, output_data) in enumerate(zip(
+                inputs, output_data), start=1):
+            with self.subTest(f"variation #{variant}",
+                              inputs=inputs, output_data=output_data):
+                self.assertEqual(exchangeable_value(
+                    inputs[0], inputs[1], inputs[2], inputs[3]), output_data)
 
     @pytest.mark.task(taskno=6)
     def test_non_exchangeable_value(self):
