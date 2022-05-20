@@ -13,7 +13,7 @@ def get_change(budget, exchanging_value):
     """
 
     :param budget: float - amount of money you own.
-    :param exchanging_value: int - amount of your money you want to exchange now.
+    :param exchanging_value: int - amount of money you want to exchange now.
     :return: float - amount left of your starting currency after exchanging.
     """
 
