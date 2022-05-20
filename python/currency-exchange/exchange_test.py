@@ -104,5 +104,5 @@ class CurrencyExchangeTest(unittest.TestCase):
                 input_data, output_data), start=1):
             with self.subTest(f"variation #{variant}",
                               input_data=input_data, output_data=output_data):
-                self.assertEqual(get_number_of_bills(
+                self.assertEqual(bank_rate(
                     input_data[0], input_data[1]), output_data)
