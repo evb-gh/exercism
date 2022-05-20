@@ -41,6 +41,7 @@ def get_number_of_bills(budget, denomination):
 
     return int(budget / denomination)
 
+
 def bank_rate(exchange_rate, spread):
     """
 
