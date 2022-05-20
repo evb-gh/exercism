@@ -87,6 +87,9 @@ class CurrencyExchangeTest(unittest.TestCase):
 
         output_data = [0, 28, 229, 13]
 
-        for variant, (inputs, output_data) in enumerate(zip(inputs, output_data), start=1):
-            with self.subTest(f"variation #{variant}", inputs=inputs, output_data=output_data):
-                self.assertEqual(non_exchangeable_value(inputs[0], inputs[1], inputs[2], inputs[3]), output_data)
+        for variant, (inputs, output_data) in enumerate(zip(
+                inputs, output_data), start=1):
+            with self.subTest(f"variation #{variant}",
+                              inputs=inputs, output_data=output_data):
+                self.assertEqual(non_exchangeable_value(
+                    inputs[0], inputs[1], inputs[2], inputs[3]), output_data)
