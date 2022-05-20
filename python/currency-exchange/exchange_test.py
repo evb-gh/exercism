@@ -94,10 +94,10 @@ class CurrencyExchangeTest(unittest.TestCase):
                 self.assertEqual(non_exchangeable_value(
                     inputs[0], inputs[1], inputs[2], inputs[3]), output_data)
 
-    @pytest.mark.task(taskno=4)
-    def test_get_number_of_bills(self):
-        input_data = [(163270, 50000), (54361, 1000)]
-        output_data = [3, 54]
+    @pytest.mark.task(taskno=7)
+    def test_bank_rate(self):
+        input_data = [(1.20, 10), (0.80, 30)]
+        output_data = [1.32, 1.04]
 
         for variant, (input_data, output_data) in enumerate(zip(
                 input_data, output_data), start=1):
