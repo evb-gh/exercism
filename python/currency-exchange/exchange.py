@@ -41,6 +41,16 @@ def get_number_of_bills(budget, denomination):
 
     return int(budget / denomination)
 
+def bank_rate(exchange_rate, spread):
+    """
+
+    :param exchange_rate: float - the unit value of the foreign currency.
+    :param spread: int - percentage that is taken as an exchange fee.
+    :return: float - return exchange rate plus spread.
+    """
+
+    return float(exchange_rate * (1 + spread / 100))
+
 
 def exchangeable_value(budget, exchange_rate, spread, denomination):
     """
