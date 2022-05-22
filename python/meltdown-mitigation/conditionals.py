@@ -43,9 +43,9 @@ def reactor_efficiency(voltage, current, theoretical_max_power):
 
     if ((voltage * current) / theoretical_max_power) * 100 < 30:
         return "black"
-    elif ((voltage * current) / theoretical_max_power) * 100 < 60:
+    if ((voltage * current) / theoretical_max_power) * 100 < 60:
         return "red"
-    elif ((voltage * current) / theoretical_max_power) * 100 < 80:
+    if ((voltage * current) / theoretical_max_power) * 100 < 80:
         return "orange"
     else:
         return "green"
