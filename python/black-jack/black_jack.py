@@ -49,9 +49,12 @@ def value_of_ace(card_one, card_two):
     2.  'A' (ace card) = 11 (if already in hand)
     3.  '2' - '10' = numerical value.
     """
+    value_card_one = 11 if card_one == ("A") else value_of_card(card_one)
+    value_card_two = 11 if card_two == ("A") else value_of_card(card_two)
+    total_score = value_card_one + value_card_two + 11
     total_value = value_of_card(card_one) + value_of_card(card_two)
 
-    return int(11) if total_value + 11 <= int(21) else int(1)
+    return int(11) if total_value <= int(21) else int(1)
 
 
 def is_blackjack(card_one, card_two):
