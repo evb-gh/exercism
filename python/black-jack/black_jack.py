@@ -18,10 +18,10 @@ def value_of_card(card):
 
     if card in ["J", "Q", "K"]:
         return int(10)
-    elif card == "A":
+    if card == "A":
         return int(1)
-    else:
-        return int(card)
+
+    return int(card)
 
 
 def higher_card(card_one, card_two):
