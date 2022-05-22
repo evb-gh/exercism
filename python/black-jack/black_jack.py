@@ -17,9 +17,9 @@ def value_of_card(card):
     """
     if card.isnumeric():
         return int(card)
-    elif card in ["J", "Q", "K"]:
+    if card in ["J", "Q", "K"]:
         return int(10)
-    else card == "A":
+    if card == "A":
         return int(1)
 
 
