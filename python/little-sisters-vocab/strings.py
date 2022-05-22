@@ -39,7 +39,7 @@ def remove_suffix_ness(word):
     """
 
     return (
-        word.removesuffix("ness").replace("i", "y")
+        word = word.removesuffix("ness") + word[:-1] + "y"
         if word.removesuffix("ness")[-1] == "i"
         else word.removesuffix("ness")
     )
