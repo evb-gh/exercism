@@ -22,8 +22,6 @@ def value_of_card(card):
     if card == "A":
         return 1
 
-    pass
-
 
 def higher_card(card_one, card_two):
     """Determine which card has a higher value in the hand.
