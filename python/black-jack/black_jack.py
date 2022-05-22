@@ -18,6 +18,7 @@ def value_of_card(card):
 
     if card in ["J", "Q", "K"]:
         return int(10)
+
     if card == "A":
         return int(1)
 
@@ -74,8 +75,8 @@ def is_blackjack(card_one, card_two):
 
     if "A" in [card_one, card_two]:
         return value_of_card(card_one) == 10 or value_of_card(card_two) == 10
-    else:
-        return False
+
+    return False
 
 
 def can_split_pairs(card_one, card_two):
