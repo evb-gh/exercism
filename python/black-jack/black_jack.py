@@ -18,9 +18,9 @@ def value_of_card(card):
     if card.isnumeric():
         return int(card)
     if card in ["J", "Q", "K"]:
-        return 10
+        return int(10)
     if card == "A":
-        return 1
+        return int(1)
 
 
 def higher_card(card_one, card_two):
