@@ -65,7 +65,7 @@ def is_blackjack(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    pass
+    return value_of_card(card_one) + value_of_card(card_two) == int(21)
 
 
 def can_split_pairs(card_one, card_two):
