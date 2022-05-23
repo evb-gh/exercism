@@ -79,7 +79,7 @@ def average_even_is_average_odd(hand):
 
     odd = []
     even = []
-    hand_len = len(hand)
+    hand_len = len(hand) - 1
 
     while hand_len > 0:
         even.append(hand[hand_len]) if hand_len % 2 == 0 else odd.append(hand[hand_len])
