@@ -28,7 +28,7 @@ def concatenate_rounds(rounds_1, rounds_2):
     :return: list - all rounds played.
     """
 
-    pass
+    return rounds_1 + rounds_2
 
 
 def list_contains_round(rounds, number):
@@ -39,7 +39,7 @@ def list_contains_round(rounds, number):
     :return: bool - was the round played?
     """
 
-    pass
+    return number in rounds
 
 
 def card_average(hand):
@@ -48,8 +48,12 @@ def card_average(hand):
     :param hand: list - cards in hand.
     :return: float - average value of the cards in the hand.
     """
+    sum = 0
 
-    pass
+    for i in hand:
+        sum += i
+
+    return float(sum / hand.len())
 
 
 def approx_average_is_average(hand):
