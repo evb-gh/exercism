@@ -96,4 +96,4 @@ def maybe_double_last(hand):
     """
     hand[-1] = 22 if hand[-1] == 11 else hand
 
-    return hand
+    pass
