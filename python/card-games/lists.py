@@ -53,7 +53,7 @@ def card_average(hand):
     for i in hand:
         sum += i
 
-    return float(sum / hand.len())
+    return float(sum / len(hand))
 
 
 def approx_average_is_average(hand):
@@ -63,7 +63,12 @@ def approx_average_is_average(hand):
     :return: bool - does one of the approximate averages equal the `true average`?
     """
 
-    pass
+    middle = float(len(input_list)) / 2
+
+    if middle % 2 != 0:
+        return hand[int(middle - 0.5)] == card_average(hand)
+    else:
+        return hand[int(middle)] == card_average(hand)
 
 
 def average_even_is_average_odd(hand):
