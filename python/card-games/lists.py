@@ -17,7 +17,7 @@ def get_rounds(number):
         num = number + 1
         list.append(num)
 
-    return list
+    pass
 
 
 def concatenate_rounds(rounds_1, rounds_2):
