@@ -68,7 +68,7 @@ def approx_average_is_average(hand):
     if middle % 2 != 0:
         return hand[int(middle - 0.5)] == card_average([hand[0], hand[-1]])
     else:
-        return hand[int(middle)] == card_average(hand)
+        return hand[int(middle)] == card_average([hand[0], hand[-1]])
 
 
 def average_even_is_average_odd(hand):
