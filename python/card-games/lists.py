@@ -84,8 +84,9 @@ def average_even_is_average_odd(hand):
 
     while hand_len >= 0:
         even.append(hand[hand_len]) if hand_len % 2 == 0 else odd.append(hand[hand_len])
+        hand_len -= 1
 
-    pass
+    return card_average(even) == card_average(odd)
 
 
 def maybe_double_last(hand):
@@ -94,5 +95,4 @@ def maybe_double_last(hand):
     :param hand: list - cards in hand.
     :return: list - hand with Jacks (if present) value doubled.
     """
-
-    pass
+    return hand[-1] = 22 if hand[-1] == 11 else hand
