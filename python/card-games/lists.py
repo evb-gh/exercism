@@ -82,9 +82,9 @@ def average_even_is_average_odd(hand):
 
     for i in range(len(hand)):
         if i % 2 == 0:
-            even[len(even) :] = hand[i]
+            even[len(even) :] = [hand[i]]
         else:
-            odd[len(odd) :] = hand[i]
+            odd[len(odd) :] = [hand[i]]
 
     # return card_average(even) == card_average(odd)
     pass
