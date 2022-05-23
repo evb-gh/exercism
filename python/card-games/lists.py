@@ -79,11 +79,9 @@ def average_even_is_average_odd(hand):
 
     odd = []
     even = []
-    hand_len = len(hand) - 1
 
-    while hand_len >= 0:
+    for i in range(len(hand)):
         even.append(hand[hand_len]) if hand_len % 2 == 0 else odd.append(hand[hand_len])
-        hand_len = hand_len - 1
 
     #  card_average(even) == card_average(odd)
     pass
