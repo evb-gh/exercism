@@ -86,8 +86,7 @@ def average_even_is_average_odd(hand):
         else:
             odd[len(odd) :] = [hand[i]]
 
-    # return card_average(even) == card_average(odd)
-    pass
+    return card_average(even) == card_average(odd)
 
 
 def maybe_double_last(hand):
