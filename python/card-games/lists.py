@@ -95,4 +95,6 @@ def maybe_double_last(hand):
     :param hand: list - cards in hand.
     :return: list - hand with Jacks (if present) value doubled.
     """
-    return hand[-1] = 22 if hand[-1] == 11 else hand
+    hand[-1] = 22 if hand[-1] == 11 else hand
+
+    return hand
