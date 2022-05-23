@@ -81,10 +81,9 @@ def average_even_is_average_odd(hand):
     even = []
 
     for i in range(len(hand)):
-        even.append(hand[hand_len]) if hand_len % 2 == 0 else odd.append(hand[hand_len])
+        even.append(hand[i]) if i % 2 == 0 else odd.append(hand[i])
 
-    #  card_average(even) == card_average(odd)
-    pass
+    return card_average(even) == card_average(odd)
 
 
 def maybe_double_last(hand):
