@@ -25,8 +25,12 @@ def find_my_friend(queue, friend_name):
     :param friend_name: str - name of friend to find.
     :return: int - index at which the friends name was found.
     """
+    # using .index() is easy, but
+    # this: https://stackoverflow.com/a/71182817/1733718
+    # is more challenging
+    # [index for index in range(len(queue)) if queue[index] == friend_name]
 
-    pass
+    return queue.index(friend_name)
 
 
 def add_me_with_my_friends(queue, index, person_name):
@@ -37,8 +41,7 @@ def add_me_with_my_friends(queue, index, person_name):
     :param person_name: str - the name to add.
     :return: list - queue updated with new name.
     """
-
-    pass
+        pass
 
 
 def remove_the_mean_person(queue, person_name):
