@@ -54,7 +54,7 @@ def approx_average_is_average(hand):
     """
 
     middle = len(hand) // 2
-    first_last_avg = card_average(hand[0], hand[-1])
+    first_last_avg = card_average([hand[0], hand[-1]])
 
     return card_average(hand) in (first_last_avg, middle)
 
