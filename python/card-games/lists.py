@@ -53,7 +53,7 @@ def approx_average_is_average(hand):
     :return: bool - does one of the approximate averages equal the `true average`?
     """
 
-    middle = float(len(hand)) // 2
+    middle = len(hand) // 2
 
     return hand[int(middle)] == card_average(hand) or card_average(
         hand
