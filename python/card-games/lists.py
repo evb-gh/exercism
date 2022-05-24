@@ -42,12 +42,8 @@ def card_average(hand):
     :param hand: list - cards in hand.
     :return: float - average value of the cards in the hand.
     """
-    sum = 0
 
-    for i in hand:
-        sum += i
-
-    return float(sum / len(hand))
+    return float(sum(hand))
 
 
 def approx_average_is_average(hand):
