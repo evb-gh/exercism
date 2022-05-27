@@ -41,8 +41,9 @@ def add_me_with_my_friends(queue, index, person_name):
     :param person_name: str - the name to add.
     :return: list - queue updated with new name.
     """
+    queue[index] = person_name
 
-    pass
+    return queue
 
 
 def remove_the_mean_person(queue, person_name):
