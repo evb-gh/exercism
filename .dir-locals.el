@@ -1,2 +1,2 @@
-((nil . ((eval git-auto-commit-mode 1
-               (gac-debounce-interval . 120)))))
+((nil . ((eval git-auto-commit-mode 1)
+         (gac-debounce-interval . 180))))
