@@ -36,7 +36,7 @@ def add_me_with_my_friends(queue, index, person_name):
     :return: list - queue updated with new name.
     """
 
-    pass
+    return queue.insert(index, person_name)
 
 
 def remove_the_mean_person(queue, person_name):
@@ -47,7 +47,7 @@ def remove_the_mean_person(queue, person_name):
     :return: list - queue update with the mean persons name removed.
     """
 
-    pass
+    return queue.remove(person_name)
 
 
 def how_many_namefellows(queue, person_name):
@@ -58,7 +58,7 @@ def how_many_namefellows(queue, person_name):
     :return: int - the number of times the name appears in the queue.
     """
 
-    pass
+    return queue.count(person_name)
 
 
 def remove_the_last_person(queue):
