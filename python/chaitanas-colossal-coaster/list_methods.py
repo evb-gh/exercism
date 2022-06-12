@@ -10,12 +10,10 @@ def add_me_to_the_queue(express_queue, normal_queue, ticket_type, person_name):
     :param person_name: str - name of person to add to a queue.
     :return: list - the (updated) queue the name was added to.
     """
-
-    return (
-        express_queue + [person_name]
-        if ticket_type == 1
-        else normal_queue + [person_name]
-    )
+    if ticket_type == 0:
+        return normal_queue.append(person_name)
+    if ticket_type == 1:
+        return express_queue.append(person_name)
 
 
 def find_my_friend(queue, friend_name):
@@ -25,10 +23,6 @@ def find_my_friend(queue, friend_name):
     :param friend_name: str - name of friend to find.
     :return: int - index at which the friends name was found.
     """
-    # using .index() is easy, but
-    # this: https://stackoverflow.com/a/71182817/1733718
-    # is more challenging
-    # [index for index in range(len(queue)) if queue[index] == friend_name]
 
     return queue.index(friend_name)
 
@@ -41,9 +35,8 @@ def add_me_with_my_friends(queue, index, person_name):
     :param person_name: str - the name to add.
     :return: list - queue updated with new name.
     """
-    queue[index] = person_name
 
-    return queue
+    pass
 
 
 def remove_the_mean_person(queue, person_name):
@@ -54,7 +47,7 @@ def remove_the_mean_person(queue, person_name):
     :return: list - queue update with the mean persons name removed.
     """
 
-    return queue.remove(person_name)
+    pass
 
 
 def how_many_namefellows(queue, person_name):
@@ -65,7 +58,7 @@ def how_many_namefellows(queue, person_name):
     :return: int - the number of times the name appears in the queue.
     """
 
-    return person_name.count(queue)
+    pass
 
 
 def remove_the_last_person(queue):
@@ -75,7 +68,7 @@ def remove_the_last_person(queue):
     :return: str - name that has been removed from the end of the queue.
     """
 
-    return queue.pop(-1)
+    pass
 
 
 def sorted_names(queue):
@@ -85,4 +78,4 @@ def sorted_names(queue):
     :return: list - copy of the queue in alphabetical order.
     """
 
-    return queue.sort()
+    pass
