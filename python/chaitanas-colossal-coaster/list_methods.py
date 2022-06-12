@@ -68,7 +68,7 @@ def remove_the_last_person(queue):
     :return: str - name that has been removed from the end of the queue.
     """
 
-    pass
+    return queue[-1]
 
 
 def sorted_names(queue):
@@ -78,4 +78,4 @@ def sorted_names(queue):
     :return: list - copy of the queue in alphabetical order.
     """
 
-    pass
+    return queue.sort()
