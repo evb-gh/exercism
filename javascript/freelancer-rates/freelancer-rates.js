@@ -49,5 +49,6 @@ export function daysInBudget(budget, ratePerHour) {
  * @returns {number} the rounded up discounted rate
  */
 export function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
-  throw new Error('Remove this line and implement the function');
+  const total = dayRate(ratePerHour) * numDays;
+  return total - total * discount;
 }
